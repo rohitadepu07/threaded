@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 20% 96%;
+    --foreground: 350 30% 12%;
+
+    --card: 30 25% 93%;
+    --card-foreground: 350 30% 12%;
+
+    --popover: 30 20% 96%;
+    --popover-foreground: 350 30% 12%;
+
+    --primary: 350 60% 28%;
+    --primary-foreground: 40 60% 92%;
+
+    --secondary: 40 55% 55%;
+    --secondary-foreground: 350 30% 12%;
+
+    --muted: 30 15% 88%;
+    --muted-foreground: 350 15% 40%;
+
+    --accent: 40 70% 45%;
+    --accent-foreground: 30 20% 96%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 20% 82%;
+    --input: 30 20% 82%;
+    --ring: 350 60% 28%;
+
+    --radius: 0.5rem;
+
+    /* Custom brand tokens */
+    --maroon: 350 60% 28%;
+    --deep-red: 0 65% 35%;
+    --mustard: 40 80% 50%;
+    --antique-gold: 40 55% 55%;
+    --cream: 40 40% 94%;
+    --warm-brown: 25 30% 25%;
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Cormorant Garamond', serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Gold decorative divider */
+.gold-divider {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    hsl(var(--antique-gold)) 20%,
+    hsl(var(--mustard)) 50%,
+    hsl(var(--antique-gold)) 80%,
+    transparent 100%
+  );
+}
+
+/* Ornamental border pattern */
+.ornate-border {
+  border: 2px solid hsl(var(--antique-gold) / 0.4);
+  box-shadow:
+    inset 0 0 0 4px hsl(var(--cream)),
+    inset 0 0 0 6px hsl(var(--antique-gold) / 0.2);
+}
+
+/* Fabric texture overlay */
+.fabric-texture {
+  background-image:
+    radial-gradient(circle at 25% 25%, hsl(var(--antique-gold) / 0.03) 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, hsl(var(--antique-gold) / 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.gold-shimmer {
+  background: linear-gradient(
+    90deg,
+    hsl(var(--antique-gold)) 0%,
+    hsl(var(--mustard)) 25%,
+    hsl(40 90% 70%) 50%,
+    hsl(var(--mustard)) 75%,
+    hsl(var(--antique-gold)) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
