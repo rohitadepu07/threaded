@@ -98,7 +98,7 @@ const Index = () => {
 
       <footer className="py-6 bg-primary text-center border-t border-border">
         <p className="font-body text-sm text-primary-foreground/60">
-          © {new Date().getFullYear()} Threaded Design Memories. All rights reserved. Handcrafted with ❤️ by k0decraft.
+          © {new Date().getFullYear()} Threaded Design Memories. All rights reserved. <a href="https://k0decraft.in" target="_blank" rel="noopener noreferrer" className="hover:underline">Handcrafted with ❤️ by k0decraft</a>.
         </p>
       </footer>
     </div>
