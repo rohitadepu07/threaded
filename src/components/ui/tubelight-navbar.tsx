@@ -109,7 +109,7 @@ export function NavBar({ items, className }: NavBarProps) {
             className="flex items-center gap-3 hover:opacity-90 transition-opacity"
           >
             <img
-              src="/android-chrome-512x512.png"
+              src={`${import.meta.env.BASE_URL}android-chrome-512x512.png`}
               alt="Logo"
               className="w-12 h-12 rounded-full border-2 border-primary object-cover"
             />
@@ -164,7 +164,7 @@ export function NavBar({ items, className }: NavBarProps) {
           className="flex items-center gap-2 hover:opacity-90 transition-opacity"
         >
           <img
-            src="/android-chrome-512x512.png"
+            src={`${import.meta.env.BASE_URL}android-chrome-512x512.png`}
             alt="Logo"
             className="w-10 h-10 rounded-full border border-primary object-cover"
           />
