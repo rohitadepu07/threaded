@@ -40,13 +40,12 @@ const AboutSection = () => {
             <p className="font-body text-lg leading-relaxed text-muted-foreground">
               Each piece is a labour of devotion — fine needlework that captures the
               essence of emotions, celebrations, and the beauty of our cultural roots.
-              From delicate florals inspired by Mughal gardens to contemporary designs
-              that honour our heritage, every creation is uniquely handcrafted.
+              Every creation is uniquely handcrafted.
             </p>
             <div className="flex items-center gap-6 pt-4">
               <div className="text-center">
-                <span className="font-display text-3xl font-bold text-accent">500+</span>
-                <p className="font-body text-sm text-muted-foreground mt-1">Hoops Created</p>
+                <span className="font-display text-3xl font-bold text-accent">50+</span>
+                <p className="font-body text-sm text-muted-foreground mt-1">Embroidery Creations</p>
               </div>
               <div className="w-px h-12 bg-border" />
               <div className="text-center">

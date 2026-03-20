@@ -34,7 +34,7 @@ const Index = () => {
       <CollectionGrid
         items={[
           {
-            title: "Wedding & Couple Hoops",
+            title: "Wedding & Couple Hoops - 1500/- Rs",
             subtitle: "Bridal Collection",
             description: "Celebrate the most sacred bond with a handcrafted embroidery hoop — a timeless keepsake that captures the essence of your love story, adorned with traditional Indian motifs.",
             image: weddingImage,
@@ -47,7 +47,7 @@ const Index = () => {
             ],
           },
           {
-            title: "Friendship & Memory Hoops",
+            title: "Friendship & Memory Hoops - 1000/- Rs",
             subtitle: "Bonds Collection",
             description: "Gift a piece of your heart — personalized embroidery hoops that tell the story of friendship, laughter, and unforgettable memories woven in thread.",
             image: friendshipImage,
@@ -60,7 +60,7 @@ const Index = () => {
             ],
           },
           {
-            title: "Floral & Traditional Art",
+            title: "Floral & Traditional Art - 1000/- Rs",
             subtitle: "Heritage Collection",
             description: "Inspired by the timeless beauty of Indian floral patterns, paisley motifs, and mandala art — each piece is a tribute to our rich cultural heritage and centuries of craftsmanship.",
             image: floralImage,
@@ -73,7 +73,7 @@ const Index = () => {
             ],
           },
           {
-            title: "Handmade Jewellery",
+            title: "Handmade Jewellery - Starting from 100/- Rs",
             subtitle: "Festive Collection",
             description: "Adorned with silk threads and traditional artistry, our handmade jewellery collection brings festive elegance to every celebration. Custom colours available for every occasion.",
             image: jewelleryImage,
@@ -89,7 +89,9 @@ const Index = () => {
       />
 
       <SectionDivider />
-      <TestimonialSection />
+      <div id="testimonials">
+        <TestimonialSection />
+      </div>
 
       <SectionDivider />
       <ContactSection />
